@@ -1,13 +1,13 @@
 <footer class="footer">
   <small>
-    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+    <%= t ".the" %><%= link_to t(".rort"), "http://www.railstutorial.org/" %></a>
+    <%= t ".by" %><%= link_to "Michael Hartl", "http://www.michaelhartl.com/" %></a>
   </small>
   <nav>
     <ul>
       <li><%= link_to t(".about"), about_path %></li>
       <li><%= link_to t(".contact"), contact_path %></li>
-      <li><a href="http://news.railstutorial.org/"><%= t(".news") %></a></li>
+      <li><%= link_to t(".news"), "http://news.railstutorial.org/" %></li>
     </ul>
   </nav>
 </footer>
