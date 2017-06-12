@@ -71,5 +71,7 @@ en:
       new: "New user?"
       password: "Password"
       signup: "Sign up now!"
+      remember_me: "Remember me on this computer"
     create:
+      success: "Welcome to the Sample App"
       invalid: "Invalid email/password combination"
