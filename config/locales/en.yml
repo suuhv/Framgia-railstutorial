@@ -15,8 +15,25 @@ en:
       home: "Home"
       login: "Login"
       logout: "Log out"
+      profile: "Profile"
       sampleapp: "sample app"
+      setting: " Settings"
       users: "Users"
+  sessions:
+    create:
+      invalid: "Invalid email/password combination"
+      success: "Welcome to the Sample App"
+    new:
+      email: "Email"
+      login: "Log in"
+      new: "New user?"
+      password: "Password"
+      remember_me: "Remember me on this computer"
+      signup: "Sign up now!"
+  shared:
+    error_messages:
+      error: "error"
+      the: "The form contains "
   static_pages:
     about:
       about: "About"
@@ -47,31 +64,34 @@ en:
       this_is: "This is the home page for the"
       welcome: "Welcome to the Sample App"
   users:
-    new:
+    create:
+      error: "Error!"
+      welcome: "Welcome to the Sample App!"
+    edit:
+      edit_user: "Edit user"
+      danger: "Please log in."
+      save: "Save changes"
+      update: "Update your profile"
+    destroy:
+      deleted: "User deleted!"
+      er: "Error delete!"
+    form:
+      change: "change"
+      confimation: "Confirmation"
       email: "Email"
       name: "Name"
       password: "Password"
-      password_conf: "Confirmation"
+    index:
+      all_user: "All users"
+    new:
       signup: "Sign up"
       submit: "Create my account"
     show:
       email: "Email: "
       name: "Name: "
-    create:
+    user:
+      delete: "Delete"
+      sure: "You sure?"
+    update:
       error: "Error!"
-      welcome: "Welcome to the Sample App!"
-  shared:
-    error_messages:
-      error: "error"
-      the: "The form contains "
-  sessions:
-    new:
-      email: "Email"
-      login: "Log in"
-      new: "New user?"
-      password: "Password"
-      signup: "Sign up now!"
-      remember_me: "Remember me on this computer"
-    create:
-      success: "Welcome to the Sample App"
-      invalid: "Invalid email/password combination"
+      success: "Profile updated!"

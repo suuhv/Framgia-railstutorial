@@ -5,6 +5,7 @@
     <%= link_to t(".rort"), "http://www.railstutorial.org/" %>
     <%= t ".sp_app" %>
   </h2>
-  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  <% unless logged_in? %>
+    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
 </div>
-<%= link_to image_tag("rails.png", alt: "Rails logo"), "http://rubyonrails.org/" %>
