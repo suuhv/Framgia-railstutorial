@@ -1,4 +1,9 @@
 en:
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      invalid_activate: "Invalid activation link"
+  check_mail: "Please check your email to activate your account."
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
@@ -23,6 +28,7 @@ en:
     create:
       invalid: "Invalid email/password combination"
       success: "Welcome to the Sample App"
+      message: "Account not activated. Check your email for the activation link."
     new:
       email: "Email"
       login: "Log in"
@@ -83,15 +89,31 @@ en:
       password: "Password"
     index:
       all_user: "All users"
+      avatar: "Avatar"
+      name: "Name"
+      email: "Email"
+      activated: "Activated"
     new:
       signup: "Sign up"
       submit: "Create my account"
     show:
       email: "Email: "
       name: "Name: "
+      activate: "Activated: "
     user:
       delete: "Delete"
       sure: "You sure?"
     update:
       error: "Error!"
       success: "Profile updated!"
+  user_mailer:
+    account_activation:
+      activate: "Activate"
+      click: "Click on the link below to activate your account:"
+      hi: "Hi"
+      welcome: "Welcome to the Sample App! "
+      subject: "Account activation"
+      simple_app: "Simple App"
+    password_reset:
+      hi: "Hi"
+      mail: "to@example.org"

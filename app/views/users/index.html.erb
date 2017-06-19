@@ -4,7 +4,20 @@
 <%= will_paginate %>
 
 <ul class="users">
-  <%= render partial: "user", collection: @users %>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th><%= t ".avatar" %></th>
+        <th><%= t ".name" %></th>
+        <th><%= t ".email" %></th>
+        <th><%= t ".activated" %></th>
+        <% if current_user.is_admin? %>
+          <th><%= t ".delete" %></th>
+        <% end %>
+      </tr>
+    </thead>
+    <%= render partial: "user", collection: @users %>
+  </table>
 </ul>
 
 <%= will_paginate %>

@@ -1,15 +1,19 @@
-User.create! name:  "Example User",
+User.create! name: "Example User",
   email: "suu@123.com",
   password: "123123",
   password_confirmation: "123123",
-  is_admin: true
+  is_admin: true,
+  activated: true,
+  activated_at: Time.zone.now
 
-99.times do |n|
+Settings.user.faker_user_number.times do |n|
   name = Faker::Name.name
   email = "suu#{n+1}@123.com"
   password = "123123"
   User.create! name: name,
     email: email,
     password: password,
-    password_confirmation: password
+    password_confirmation: password,
+    activated: true,
+    activated_at: Time.zone.now
 end
