@@ -5,7 +5,8 @@
       <h1>
         <%= gravatar_for @user %>
         <%= t ".name" %><%= @user.name %><br>
-        <%= t ".email" %><%= @user.email %>
+        <%= t ".email" %><%= @user.email %><br>
+        <%= t ".activate" %><%= @user.activated? %>
       </h1>
     </section>
   </aside>

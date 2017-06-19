@@ -5,3 +5,4 @@ user:
   gravatar_size: 80
   gravatar_size_2: 50
   page_size: 10
+  faker_user_number: 99
