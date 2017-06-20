@@ -31,6 +31,7 @@ en:
       message: "Account not activated. Check your email for the activation link."
     new:
       email: "Email"
+      forgot_password: "(forgot password)"
       login: "Log in"
       new: "New user?"
       password: "Password"
@@ -40,6 +41,13 @@ en:
     error_messages:
       error: "error"
       the: "The form contains "
+    user_info:
+      profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+      smaller: "Maximum file size is 5MB. Please choose a smaller file."
   static_pages:
     about:
       about: "About"
@@ -64,6 +72,7 @@ en:
       rt_help: "Rails Tutorial help section"
       to_get_help: "To get help on this sample app, see the"
     home:
+      micropost_feed: "Micropost Feed"
       rort: "Ruby on Rails Tutorial"
       signup: "Sign up now!"
       sp_app: "sample application."
@@ -74,8 +83,9 @@ en:
       error: "Error!"
       welcome: "Welcome to the Sample App!"
     edit:
-      edit_user: "Edit user"
       danger: "Please log in."
+      edit_user: "Edit user"
+      login: "Please log in."
       save: "Save changes"
       update: "Update your profile"
     destroy:
@@ -88,18 +98,20 @@ en:
       name: "Name"
       password: "Password"
     index:
+      activated: "Activated"
       all_user: "All users"
       avatar: "Avatar"
-      name: "Name"
       email: "Email"
-      activated: "Activated"
+      login: "Please log in."
+      name: "Name"
     new:
       signup: "Sign up"
       submit: "Create my account"
     show:
-      email: "Email: "
-      name: "Name: "
       activate: "Activated: "
+      email: "Email: "
+      micropost: "Microposts"
+      name: "Name: "
     user:
       delete: "Delete"
       sure: "You sure?"
@@ -115,5 +127,34 @@ en:
       subject: "Account activation"
       simple_app: "Simple App"
     password_reset:
-      hi: "Hi"
-      mail: "to@example.org"
+      password_reset: "Password reset"
+      to_reset: "To reset your password click the link below:"
+      this_link: "This link will expire in two hours."
+      if_you: "If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is."
+      password_reset: "Password reset"
+      reset: "Reset password"
+  password_resets:
+    can_not_be_empty: "can't be empty"
+    email_not_found: "Email address not found"
+    email_sent: "Email sent with password reset instructions"
+    edit:
+      reset: "Reset password"
+      confirm: "Confirmation"
+      password: "Password"
+      update: "Update password"
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+      email: "Email"
+    has_reset: "Password has been reset."
+    has_expired: "Password reset has expired."
+  microposts:
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+    micropost:
+      should_be_less: "should be less than 5MB"
+      delete: "delete"
+      you_sure: "You sure?"

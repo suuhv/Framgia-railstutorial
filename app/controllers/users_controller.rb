@@ -40,6 +40,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.user.page_size
   end
 
   def destroy
@@ -58,14 +60,6 @@ class UsersController < ApplicationController
 
     return if @user
     render file: "public/404.html", layout: false
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t ".danger"
-      redirect_to login_url
-    end
   end
 
   def correct_user

@@ -17,3 +17,9 @@ Settings.user.faker_user_number.times do |n|
     activated: true,
     activated_at: Time.zone.now
 end
+
+users = User.order(:created_at).take 6
+Settings.micropost.size.times do
+  content = Faker::Lorem.sentence 5
+  users.each{|user| user.microposts.create! content: content}
+end
