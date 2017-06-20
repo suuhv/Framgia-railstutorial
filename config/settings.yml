@@ -6,3 +6,4 @@ user:
   gravatar_size_2: 50
   page_size: 10
   faker_user_number: 99
+  time_save: 2
