@@ -41,6 +41,13 @@ en:
     error_messages:
       error: "error"
       the: "The form contains "
+    user_info:
+      profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+      smaller: "Maximum file size is 5MB. Please choose a smaller file."
   static_pages:
     about:
       about: "About"
@@ -65,6 +72,7 @@ en:
       rt_help: "Rails Tutorial help section"
       to_get_help: "To get help on this sample app, see the"
     home:
+      micropost_feed: "Micropost Feed"
       rort: "Ruby on Rails Tutorial"
       signup: "Sign up now!"
       sp_app: "sample application."
@@ -75,8 +83,9 @@ en:
       error: "Error!"
       welcome: "Welcome to the Sample App!"
     edit:
-      edit_user: "Edit user"
       danger: "Please log in."
+      edit_user: "Edit user"
+      login: "Please log in."
       save: "Save changes"
       update: "Update your profile"
     destroy:
@@ -89,18 +98,20 @@ en:
       name: "Name"
       password: "Password"
     index:
+      activated: "Activated"
       all_user: "All users"
       avatar: "Avatar"
-      name: "Name"
       email: "Email"
-      activated: "Activated"
+      login: "Please log in."
+      name: "Name"
     new:
       signup: "Sign up"
       submit: "Create my account"
     show:
-      email: "Email: "
-      name: "Name: "
       activate: "Activated: "
+      email: "Email: "
+      micropost: "Microposts"
+      name: "Name: "
     user:
       delete: "Delete"
       sure: "You sure?"
@@ -138,4 +149,15 @@ en:
       email: "Email"
     has_reset: "Password has been reset."
     has_expired: "Password reset has expired."
-    not_found: "User not found"
+  microposts:
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+      fail: "Fail delete!"
+    micropost:
+      should_be_less: "should be less than 5MB"
+      delete: "delete"
+      you_sure: "You sure?"
+      posted: "Posted"
+      ago: "ago."

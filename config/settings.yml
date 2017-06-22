@@ -7,3 +7,9 @@ user:
   page_size: 10
   faker_user_number: 99
   time_save: 2
+post:
+  content_length: 140
+  size: 50
+  picture_size: 5
+  picture_size_width: 400
+  picture_size_height: 400
