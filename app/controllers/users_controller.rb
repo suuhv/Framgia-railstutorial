@@ -26,6 +26,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.user.page_size
+  end
+
   def edit
   end
 
@@ -39,14 +44,23 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-    @microposts = @user.microposts.paginate page: params[:page],
-      per_page: Settings.user.page_size
-  end
-
   def destroy
     @user.destroy ? flash[:success] = t(".deleted") : flash.now[:error] = t(".er")
     redirect_to users_url
+  end
+
+  def following
+    @title = "Following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render 'show_follow'
+  end
+
+  def followers
+    @title = "Followers"
+    @user  = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render 'show_follow'
   end
 
   private
