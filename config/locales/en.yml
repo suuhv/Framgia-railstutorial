@@ -48,6 +48,9 @@ en:
       compose: "Compose new micropost..."
       post: "Post"
       smaller: "Maximum file size is 5MB. Please choose a smaller file."
+    stats:
+      following: "following"
+      followers: "followers"
   static_pages:
     about:
       about: "About"
@@ -88,15 +91,23 @@ en:
       login: "Please log in."
       save: "Save changes"
       update: "Update your profile"
-    destroy:
-      deleted: "User deleted!"
-      er: "Error delete!"
     form:
       change: "change"
       confimation: "Confirmation"
       email: "Email"
       name: "Name"
       password: "Password"
+    follow:
+      follow: "Follow"
+    followers:
+      followers: "Followers"
+    following:
+      following: "Following"
+    show_follow:
+      my_prifile: "view my profile"
+      micropost: "Microposts:"
+    unfollow:
+      unfollow: "Unfollow"
     index:
       activated: "Activated"
       all_user: "All users"
@@ -153,7 +164,7 @@ en:
     create:
       created: "Micropost created!"
     destroy:
-      deleted: "Micropost deleted"
+      delete: "Micropost deleted"
       fail: "Fail delete!"
     micropost:
       should_be_less: "should be less than 5MB"
